@@ -1,0 +1,13 @@
+:root {
+   
+   /* Backgrounds */
+  --main-background: #416788;
+  --player-background: #81d2c7;
+
+  /* Font Sizes */
+  --btn-font-size: 1.4rem;
+
+  /* Font Colors */
+  --text-color: #1b2021;
+  --red-color: #ca2e55;
+}

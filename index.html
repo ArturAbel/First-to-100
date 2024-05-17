@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>First To 100 Game</title>
+  </head>
+  <body>
+
+    <!-- Game -->
+    <section id="gamePage">
+
+      <!-- Instructions -->
+      <div id="instructions">
+        <div class="instructions-upper-container">
+          <span class="instructions-title">Game Instructions</span>
+          <span class="instruction"
+            ><img
+              src="/assets/images/instructions/1.png"
+              alt="instructions-icon"
+            />Roll the dice at least once during your turn and accumulate the
+            result.</span
+          >
+          <span class="instruction"
+            ><img
+              src="/assets/images/instructions/2.png"
+              alt="instructions-icon"
+            />You can choose to roll again or click "hold" to save the current
+            points and end your turn.</span
+          >
+          <span class="instruction"
+            ><img
+              src="/assets/images/instructions/3.png"
+              alt="instructions-icon"
+            />If you roll a double six (6-6), you lose the points accumulated in
+            that turn and your turn ends.</span
+          >
+          <span class="instruction"
+            ><img
+              src="/assets/images/instructions/4.png"
+              alt="instructions-icon"
+            />The player who reaches the exact points limit wins. If a player
+            exceeds the points limit, they lose.</span
+          >
+        </div>
+        <div class="instructions-lower-container">
+          <p class="instructions-title">Please Select The Target Score</p>
+          <input id="instruction-input" type="number" name="number" min="12" max="999"placeholder=" 12 to 999" />
+          <button disabled id="instruction-btn">Start Game</button>
+        </div>
+      </div>
+
+      <!-- Players -->  
+      <div class="game-container">
+
+        <!-- Player 1 -->
+        <div id="player1" class="current-player player-container" >
+          <div class="player-upper">
+            <h1 class="player-title">Player 1</h1>
+            <h2 id="player1-total-points">0</h2>
+          </div>
+          <div class="player-bottom">
+            <div class="current-points-container">
+              <p class="current-score-title">current</p>
+              <p id="player1-current-points">0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div id="player2" class="player-container" >
+          <div class="player-upper">
+            <h1 class="player-title">Player 2</h1>
+            <h2 id="player2-total-points">0</h2>
+          </div>
+          <div class="player-bottom">
+            <div class="current-points-container">
+              <p class="current-score-title">current</p>
+              <p id="player2-current-points">0</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dice & Buttons -->
+        <div class="middle-container">
+          <h2 id="points-limit">0</h2>
+          <button id="new-btn" class="game-btn">
+            <img src="./assets/images/btns/new2.png" alt="new-game-icon" />New
+            Game
+          </button>
+          <div class="dice-container">
+            <img id="dice1" src="./assets/images/dice/1.png" alt="dice-1" />
+          </div>
+          <div class="dice-container">
+            <img id="dice2" src="./assets/images/dice/2.png" alt="dice-2" />
+          </div>
+          <button id="roll-btn" class="game-btn">
+            <img src="/assets/images/btns/dice.png" alt="dice-icon"/>Roll Dice
+          </button>
+          <button disabled id="hold-btn" class="game-btn">
+            <img src="./assets/images/btns/wait.png" alt="hold-icon"/>Hold
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
