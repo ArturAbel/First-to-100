@@ -1,0 +1,21 @@
+
+
+@media screen and (max-width: 600px) {
+  
+   #instructions{
+      height: 80vh;
+      width: 100vw;
+   }
+
+   .instructions-upper-container{
+      width: 90%;
+   }
+
+   .player-container{
+      width: 50vw;
+
+   }
+   .middle-container{
+      padding: 20rem 0;
+   }
+}
