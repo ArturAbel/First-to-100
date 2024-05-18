@@ -9,7 +9,7 @@ First To 100 is a dice game where players take turns to roll dice and accumulate
 3. **Double Six**: If you roll a double six (6-6), you lose the points accumulated in that turn and your turn ends.
 4. **Winning the Game**: The player who reaches the exact points limit wins. If a player exceeds the points limit, they lose.
 
-![Game Screenshot](.assets\screenshot\screenshot.png)
+![Game Screenshot](https://github.com/ArturAbel/First-to-100/blob/main/assets/screenshot/screenshot.png)
 
 ## Features
 
