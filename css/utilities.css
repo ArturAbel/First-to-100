@@ -104,4 +104,13 @@
   height: 100%;
 }
 
+/* Animation */
+
+@keyframes changeColors {
+   20% {background-color: #C40C0C;}
+   40% {background-color: #FFF455;}
+   60% {background-color: #FF0080;}
+   80% {background-color: #FFAA80;}
+   100% {background-color: #81d2c7;}
+}
 
