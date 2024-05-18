@@ -30,7 +30,6 @@
   flex-direction: column;
   position: absolute;
   z-index: 10;
-
   background: rgba(255, 255, 255, 0.57);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -179,7 +178,7 @@ input[type="number"] {
    border: 1px solid rgba(255, 255, 255, 0.02);
 }
 
-#hold-btn:disabled {
+#hold-btn:disabled, #roll-btn:disabled {
    background-color: gray; 
    color: white; 
    cursor: not-allowed;  
@@ -187,11 +186,11 @@ input[type="number"] {
  }
 
  /* Current player playing  */
-.current-player.player-container  {
+ .player-container.current-player {
    opacity: 1;
 }
 
 /* Winner */
 .winner{
-   background-color: goldenrod;
+   animation: changeColors 5s infinite;
 }
