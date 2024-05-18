@@ -192,5 +192,5 @@ input[type="number"] {
 
 /* Winner */
 .winner{
-   animation: changeColors 5s infinite;
+   animation: changeColors 3s infinite;
 }
