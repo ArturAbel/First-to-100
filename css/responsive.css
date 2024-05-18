@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 600px) {
   
+   #gamePage{
+      height: 90%;
+   }
+
    #instructions{
       height: 80vh;
       width: 100vw;
