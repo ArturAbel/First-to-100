@@ -29,6 +29,22 @@ for (let i = 1; i <= 4; i++) {
 
 
 
+//Instruction text manipulation
+const instruction = document.getElementsByClassName('instruction');
+Array.from(instruction).forEach(instruction => {
+   instruction.addEventListener('mouseover', function(){
+      instruction.style.color = '#ca2e55';
+      instruction.style.fontWeight  = '600';
+
+   })
+   instruction.addEventListener('mouseout', function(){
+      instruction.style.color = '';
+      instruction.style.fontWeight  = '';
+   })
+})
+
+
+
 // Verify score and enable start button
 scoreInput.addEventListener('input', function(){
    const scoreValue  = scoreInput.value;
