@@ -54,10 +54,6 @@
   height: 2rem;
   margin-right: 1rem;
 }
-.instructions-upper-container img:hover {
-  transform: scale(1.5);
-  transition: 0.5s;
-}
 
 /*  Instruction Text  */
 .instructions-title {
@@ -74,6 +70,16 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+.instruction:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.instruction:hover img{
+  transform: scale(1.4);
+  transition: 1s;
 }
 
 /* Instruction Lower Container */
